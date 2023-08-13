@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+#content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+header {
+  background-color: rgb(34, 34, 34);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+
+  color: white;
+}
+.resto-name > h1 {
+  font-size: 4rem;
+  padding: 0px;
+  margin: 0px;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+}
+
+/* TABS */
+ul {
+  list-style: none;
+}
+li {
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+  padding: 10px;
+}
+li a {
+  color: #d6d1e1;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.8s;
+}
+li::after {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  transition: color 3s, width 0.5s;
+}
+li a:hover {
+  color: #ba55ff;
+}
+li:hover::after {
+  width: 100%;
+  background-color: #ba55ff;
+}
+
+/* --------------------------- MAIN */
+
+main {
+  background-color: rgb(34, 34, 34);
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-window {
+  background-color: #737374;
+  width: 600px;
+  min-height: 500px;
+  border-radius: 25px;
+  margin: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  background: url("./logo-cookiejari.jpg");
+  background-position: center;
+  background-size: 103%;
+  height: 300px;
+  width: 300px;
+  border-radius: 400px;
+}
