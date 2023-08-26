@@ -3,6 +3,7 @@ import CrinkleJPG from "./crinkles.jpg";
 import BananaCakeJPG from "./banana-cake.jpg";
 
 function createDish(title, photo, description) {
+  //sorry I used cookies for the parent item because I got lazy retyping this
   const cookies = document.createElement("div");
   cookies.classList.add("menu-item");
 
