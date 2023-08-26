@@ -69,9 +69,17 @@ main {
   background-color: rgb(34, 34, 34);
   min-height: 450px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+main > h1 {
+  padding-top: 1rem;
+  color: white;
+  font-size: 2.5rem;
+}
+
+/*  HOME */
 
 .main-window {
   background-color: #737374;
@@ -93,4 +101,49 @@ main {
   height: 300px;
   width: 300px;
   border-radius: 400px;
+}
+
+/* MENU */
+
+.menu-window {
+  background-color: #737374;
+  width: 600px;
+  min-height: 500px;
+  border-radius: 25px;
+  margin: 3rem;
+  padding: 2rem;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 2rem;
+}
+.menu-item {
+  background-color: #333333c7;
+  color: white;
+  width: 20rem;
+  height: 30rem;
+  padding: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.image-holder {
+  height: 13rem;
+  width: 13rem;
+
+  display: inline-block;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-holder > img {
+  height: 134%;
+  width: 134%;
+  object-fit: cover;
 }

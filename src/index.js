@@ -1,5 +1,7 @@
 import "./style.css";
 import logo from "./logo-cookiejari.jpg";
+import loadHome from "./home";
+import loadMenu from "./menu";
 
 // Add the image to our existing div.
 // const myLogo = new Image();
@@ -38,6 +40,7 @@ function createNav() {
   home.textContent = "Home";
   home.addEventListener("click", (e) => {
     console.log("home");
+    loadHome();
   });
   homeDiv.appendChild(home);
 
@@ -52,6 +55,7 @@ function createNav() {
   menu.textContent = "Menu";
   menu.addEventListener("click", (e) => {
     console.log("Menu");
+    loadMenu();
   });
   menuDiv.appendChild(menu);
 
@@ -72,10 +76,17 @@ function createNav() {
   return nav;
 }
 
+function createMain() {
+  const main = document.createElement("main");
+
+  return main;
+}
+
 function component() {
   const content = document.getElementById("content");
 
   content.append(createHeader());
+  content.append(createMain());
 
   return content;
 }
