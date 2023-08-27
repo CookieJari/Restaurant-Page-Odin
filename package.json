@@ -4,7 +4,8 @@
   "description": "restaurant page project for The Odin Project course",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "GitHubPagesScript": "git subtree push --prefix dist origin gh-pages"
   },
   "author": "Zalman Hajari Parial",
   "license": "ISC",

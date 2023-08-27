@@ -88,6 +88,7 @@ function component() {
 
   content.append(createHeader());
   content.append(createMain());
+  loadHome();
 
   return content;
 }
