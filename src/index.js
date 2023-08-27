@@ -2,7 +2,7 @@ import "./style.css";
 import logo from "./logo-cookiejari.jpg";
 import loadHome from "./home";
 import loadMenu from "./menu";
-
+import loadContact from "./contact";
 // Add the image to our existing div.
 // const myLogo = new Image();
 // myLogo.src = logo;
@@ -70,6 +70,7 @@ function createNav() {
   contact.textContent = "Contact";
   contact.addEventListener("click", (e) => {
     console.log("contact");
+    loadContact();
   });
   contactDiv.appendChild(contact);
 
